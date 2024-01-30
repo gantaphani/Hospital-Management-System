@@ -10,7 +10,9 @@ VALUES
   ('Chris', 'Taylor', '1978-02-08', 'Male', '555-7890', 'chris.taylor@email.com'),
   ('Megan', 'Clark', '1995-11-15', 'Female', '555-4567', 'megan.clark@email.com'),
   ('Tom', 'Anderson', '1987-07-12', 'Male', '555-0123', 'tom.anderson@email.com'),
-  ('Sophia', 'Moore', '1984-04-02', 'Female', '555-6781', 'sophia.moore@email.com');
+  ('Sophia', 'Moore', '1984-04-02', 'Female', '555-6781', 'sophia.moore@email.com'),
+  ('Laura', 'Johnson', '1983-06-08', 'Female', '555-1122', 'laura.johnson@email.com'),
+  ('Daniel', 'Smith', '1991-09-20', 'Male', '555-3344', 'daniel.smith@email.com');;
 
 -- Inserting data for Doctors
 INSERT INTO Doctors (FirstName, LastName, Specialization, ContactNumber, Email)
@@ -31,7 +33,8 @@ VALUES
   (7, 1, '2024-02-21 08:30:00', 'Confirmed'),
   (8, 2, '2024-02-22 12:45:00', 'Pending'),
   (9, 3, '2024-02-23 15:30:00', 'Confirmed'),
-  (10, 1, '2024-02-24 07:15:00', 'Pending');
+  (10, 1, '2024-02-24 07:15:00', 'Pending'),
+  (1, 2, '2024-02-15 10:30:00', 'Confirmed');
 
 -- Inserting data for Medical Records
 INSERT INTO MedicalRecords (PatientID, DoctorID, Date, Diagnosis, Prescription)
@@ -45,7 +48,17 @@ VALUES
   (7, 1, '2024-02-21', 'Breast Cancer', 'Chemotherapy and Radiation'),
   (8, 2, '2024-02-22', 'Anxiety', 'Therapy and Medication D'),
   (9, 3, '2024-02-23', 'Diabetes', 'Insulin and Dietary Changes'),
-  (10, 1, '2024-02-24', 'Urinary Tract Infection', 'Antibiotics and Hydration');
+  (10, 1, '2024-02-24', 'Urinary Tract Infection', 'Antibiotics and Hydration'),
+  (1, 2, '2024-02-16', 'Seasonal Allergies', 'Antihistamine and Nasal Spray'),
+  (2, 1, '2024-02-18', 'Influenza', 'Rest, Fluids, and Antiviral Medication'),
+  (3, 2, '2024-02-19', 'Sprained Ankle', 'Rest, Ice, Compression, and Elevation'),
+  (4, 3, '2024-02-20', 'Contact Dermatitis', 'Topical Steroids and Moisturizers'),
+  (5, 1, '2024-02-21', 'Peptic Ulcer', 'Proton Pump Inhibitors and Dietary Changes'),
+  (6, 2, '2024-02-22', 'Tension Headaches', 'Pain Medication and Stress Management'),
+  (7, 3, '2024-02-23', 'Colon Cancer', 'Chemotherapy and Surgery'),
+  (8, 1, '2024-02-24', 'Social Anxiety Disorder', 'Counseling and Medication'),
+  (9, 2, '2024-02-25', 'Type 2 Diabetes', 'Metformin and Lifestyle Modifications'),
+  (10, 3, '2024-02-26', 'Kidney Infection', 'Antibiotics and Increased Fluid Intake');
 
 -- Inserting data for Ward Occupancy
 INSERT INTO WardOccupancy (OccupancyStatus, PatientID, AdmissionDate, DischargeDate)
